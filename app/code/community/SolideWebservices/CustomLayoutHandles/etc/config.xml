@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Solide Webservices
+ * @package     CustomLayoutHandles
+ */
+-->
+<config>
+	<modules>
+		<SolideWebservices_CustomLayoutHandles>
+			<version>1.0.0</version>
+		</SolideWebservices_CustomLayoutHandles>
+	</modules>
+	<global>
+		<helpers>
+            <customlayouthandles>
+                <class>SolideWebservices_CustomLayoutHandles_Helper</class>
+            </customlayouthandles>
+        </helpers>
+		<blocks>
+			<customlayouthandles>
+				<class>SolideWebservices_CustomLayoutHandles_Block</class>
+			</customlayouthandles>
+		</blocks>
+		<events>
+			<controller_action_layout_load_before>
+				<observers>
+					<customlayouthandles_controller_action_layout_load_before>
+						<type>singleton</type>
+						<class>SolideWebservices_CustomLayoutHandles_Model_Observer</class>
+						<method>customLayoutHandles</method>
+					</customlayouthandles_controller_action_layout_load_before>
+				</observers>
+			</controller_action_layout_load_before>
+		</events>
+    </global>
+	<adminhtml>
+		<layout>
+			<updates>
+				<customlayouthandles>
+					<file>customlayouthandles.xml</file>
+				</customlayouthandles>
+			</updates>
+		</layout>
+	</adminhtml>
+	<frontend>
+		<layout>
+			<updates>
+				<customlayouthandles>
+					<file>customlayouthandles.xml</file>
+				</customlayouthandles>
+			</updates>
+		</layout>
+	</frontend>
+	<default>
+        <customlayouthandles>
+            <settings>
+				<enabled>1</enabled>
+				<add_module_xml>1</add_module_xml>
+				<add_cms_xml>1</add_cms_xml>
+				<add_catname_xml>1</add_catname_xml>
+				<add_catlevel_xml>1</add_catlevel_xml>
+				<add_catfertility_xml>1</add_catfertility_xml>
+				<add_module_body>1</add_module_body>
+            </settings>
+        </customlayouthandles>
+    </default>
+</config>

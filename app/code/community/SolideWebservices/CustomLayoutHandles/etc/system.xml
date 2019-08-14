@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Solide Webservices
+ * @package     CustomLayoutHandles
+ */
+-->
+<config>
+    <tabs>
+		<solidewebservices translate="label">
+			<label>Solide Webservices</label>
+			<sort_order>200</sort_order>
+		</solidewebservices>
+	</tabs>
+	<sections>
+        <customlayouthandles translate="label" module="customlayouthandles">
+            <label>Custom Layout Handles</label>
+            <tab>solidewebservices</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<option_divider_general_settings translate="label">
+							<label>General Settings</label>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>101</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</option_divider_general_settings>
+                        <enabled translate="label comment">
+                            <label>Enable Extension</label>
+							<comment><![CDATA[Enable the extension and add the selected layout handles.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>102</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+						<option_divider_xml_layout translate="label">
+							<label>XML Layout Handles</label>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>103</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+						</option_divider_xml_layout>
+						<add_module_xml translate="label comment">
+                            <label>Add Module Layout Handle</label>
+							<comment><![CDATA[Add a XML handle for the viewed module, e.g. &#60;module_customer&#62;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>104</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_module_xml>
+						<add_cms_xml translate="label comment">
+                            <label>Add CMS Title Layout Handle</label>
+							<comment><![CDATA[Add a XML handle for the title of the viewed CMS page, e.g. &#60;cms_about&#62;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>105</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_cms_xml>
+						<add_catname_xml translate="label comment">
+                            <label>Add Category Name Layout Handle</label>
+							<comment><![CDATA[Add a XML handle for the viewed category based on the URL slug of that category, e.g. &#60;catalog-category-mens-clothes&#62;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>106</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_catname_xml>
+						<add_catlevel_xml translate="label comment">
+                            <label>Add Category Level Layout Handle</label>
+							<comment><![CDATA[Add a XML handle for the level of the viewed category which can then be used in layout XML files, e.g. &#60;catalog_category_level_2&#62;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>107</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_catlevel_xml>
+						<add_catfertility_xml translate="label comment">
+                            <label>Add Category Fertility Handle</label>
+							<comment><![CDATA[Add a XML handle that indicates if a category has children can then be used in layout XML files, e.g. &#60;catalog_category_parent or catalog_category_nochilderen&#62;]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>108</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_catfertility_xml>
+						<option_divider_body_classes translate="label">
+							<label>Body Classes</label>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>109</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+						</option_divider_body_classes>
+						<add_module_body translate="label comment">
+                            <label>Add Module To Body Classes</label>
+							<comment><![CDATA[Add a CSS body class for the viewed module which can then be used in stylesheets, e.g. .module-customer]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<depends>
+								 <enabled>1</enabled>
+							</depends>
+                        </add_module_body>
+                    </fields>
+                </settings>
+            </groups>
+        </customlayouthandles>
+    </sections>
+</config>

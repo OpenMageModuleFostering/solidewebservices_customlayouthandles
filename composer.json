@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SolideWebservices_CustomLayoutHandles",
+    "type": "magento-module",
+    "license": "Open-Software-License-v.-3.0-(OSL-3.0)",
+    "homepage": "",
+    "description": "This extension has the ability to add various XML Layout handles or body classes which can then be used in the customized themes.",
+    "authors": [
+    {
+        "name": "Solide Webservices",
+        "email": "contact@solidewebservices.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

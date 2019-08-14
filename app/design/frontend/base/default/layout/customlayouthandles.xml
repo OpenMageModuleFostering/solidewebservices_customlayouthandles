@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Solide Webservices
+ * @package     CustomLayoutHandles
+ */
+-->
+<layout version="0.1.0">
+	<default>
+		<reference name="root">
+			<action method="addBodyClass" ifconfig="customlayouthandles/settings/enabled">
+				<className helper="customlayouthandles/getModuleClass" />
+			</action>
+		</reference>
+	</default>
+</layout>

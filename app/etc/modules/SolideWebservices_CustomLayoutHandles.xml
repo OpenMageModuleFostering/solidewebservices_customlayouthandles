@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Solide Webservices
+ * @package		CustomLayoutHandles
+ */
+ -->
+<config>
+	<modules>
+		<SolideWebservices_CustomLayoutHandles>
+			<active>true</active>
+			<codePool>community</codePool>
+		</SolideWebservices_CustomLayoutHandles>
+	</modules>
+</config> 

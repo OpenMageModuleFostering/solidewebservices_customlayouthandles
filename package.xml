@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SolideWebservices_CustomLayoutHandles</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/OSL-3.0">Open Software License v. 3.0 (OSL-3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension has the ability to add various XML Layout handles or body classes which can then be used in the customized themes.</summary>
+    <description>This extension has the ability to add various XML Layout handles or body classes which can then be used in the customized themes. It can for example add XML Layout handles for various category related information or the currently loaded module.</description>
+    <notes>Distributed under the OSL-3.0 license.</notes>
+    <authors><author><name>Solide Webservices</name><user>Solide</user><email>contact@solidewebservices.com</email></author></authors>
+    <date>2014-02-26</date>
+    <time>20:10:56</time>
+    <contents><target name="magecommunity"><dir name="SolideWebservices"><dir name="CustomLayoutHandles"><dir name="Helper"><file name="Data.php" hash="8aaff4ada167790ce4e3b00a0a9c8bec"/></dir><dir name="Model"><file name="Observer.php" hash="e062442b24b118e9d7bbaaf38fb4550e"/></dir><dir name="etc"><file name="adminhtml.xml" hash="6c1c7cf0bd8af13684828bb49e062950"/><file name="config.xml" hash="d35341ce328b37db8a79b5cffbb86a01"/><file name="system.xml" hash="dfb487c5c4a490aa6f16c058d0f696c8"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="customlayouthandles.xml" hash="c015c5cbc34baac1543a10439fb80530"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="customlayouthandles.xml" hash="5d93dbfeb63999b2f32c7e432f7a1490"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SolideWebservices_CustomLayoutHandles.xml" hash="c08456dbe754641640a7c9b3a335b0ed"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="customlayouthandles"><file name="customlayouthandles.css" hash="8f11ac11dfd913d71531576ca2fd819e"/></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="SolideWebservices_CustomLayoutHandles.csv" hash="53d54b19aea65ba5ebaf6469b74fe746"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,25 @@
+#customlayouthandles_settings .form-list td { padding-top: 10px !important; padding-bottom: 10px !important; }
+#customlayouthandles_settings .form-list td.label { width: 250px; font-weight: bold; }
+#customlayouthandles_settings .form-list td.label label { width: 235px; }
+#customlayouthandles_settings .form-list td.value { width: 600px; }
+#customlayouthandles_settings .form-list td.value select { width: 60px; }
+#customlayouthandles_settings .form-list td.value p.note { width: 568px; }
+#row_customlayouthandles_settings_option_divider_general_settings td,
+#row_customlayouthandles_settings_option_divider_xml_layout td,
+#row_customlayouthandles_settings_option_divider_body_classes td {
+	padding: 20px 0 10px !important;
+}
+#row_customlayouthandles_settings_option_divider_general_settings td label,
+#row_customlayouthandles_settings_option_divider_xml_layout td label,
+#row_customlayouthandles_settings_option_divider_body_classes td label {
+	background-color: #6F8992 !important;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #fff;
+	padding: 4px;
+}
+#row_customlayouthandles_settings_option_divider_general_settings td.scope-label,
+#row_customlayouthandles_settings_option_divider_xml_layout td.scope-label,
+#row_customlayouthandles_settings_option_divider_body_classes td.scope-label {
+	display: none;
+}
